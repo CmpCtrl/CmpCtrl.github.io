@@ -13,7 +13,7 @@
     
       <script>
         // Current page data
-        var mkdocs_page_name = "Welcome to MkDocs";
+        var mkdocs_page_name = "CCG-CORE Library";
         var mkdocs_page_input_path = "index.md";
         var mkdocs_page_url = null;
       </script>
@@ -106,7 +106,7 @@
         <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
   <ul class="wy-breadcrumbs">
     <li><a href="." class="icon icon-home" aria-label="Docs"></a></li>
-      <li class="breadcrumb-item active">Welcome to MkDocs</li>
+      <li class="breadcrumb-item active">CCG-CORE Library</li>
     <li class="wy-breadcrumbs-aside">
     </li>
   </ul>
@@ -115,20 +115,47 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                <h1 id="welcome-to-mkdocs">Welcome to MkDocs</h1>
-<p>For full documentation visit <a href="https://www.mkdocs.org">mkdocs.org</a>.</p>
-<h2 id="commands">Commands</h2>
-<ul>
-<li><code>mkdocs new [dir-name]</code> - Create a new project.</li>
-<li><code>mkdocs serve</code> - Start the live-reloading docs server.</li>
-<li><code>mkdocs build</code> - Build the documentation site.</li>
-<li><code>mkdocs -h</code> - Print help message and exit.</li>
-</ul>
-<h2 id="project-layout">Project layout</h2>
-<pre><code>mkdocs.yml    # The configuration file.
-docs/
-    index.md  # The documentation homepage.
-    ...       # Other markdown pages, images and other files.
+                <h1 id="ccg-core-library">CCG-CORE Library</h1>
+<p><img alt="Logo" src="img/email_sig.png#logo" title="Logo" /></p>
+<p><strong>Competition Controls Group, LLC</strong>
+<strong>v0.1.0 - 5/4/24</strong></p>
+<p><br><br></p>
+<h1 id="overview">Overview</h1>
+<p>The <code>ccg</code> package is intended to implement much of the functionality common to motorsports data analysis tools. The focus is on implementing a package that is relatively easy to use when building an application.</p>
+<h2 id="functional-overview">Functional Overview</h2>
+<p>The <code>ccg</code> package is made up of several modules that implement various functionality.</p>
+<h4 id="data">Data</h4>
+<p>The modules in the <code>data</code> package implement functionality for dealing with both timeseries data as well as tabular data.</p>
+<h4 id="controllers">Controllers</h4>
+<p>The modules in the <code>controllers</code> package implement functionality related to engine controllers like importing data and defining the control strategy.</p>
+<h4 id="ui">UI</h4>
+<p>The <code>ui</code> package implements functionality related to the user interface. Including plotting and dashboards.</p>
+<h4 id="db">DB</h4>
+<p>The <code>db</code> package implements a driver for a MongoDB to work with the <code>tsdata</code> and and <code>tbldata</code> classes.</p>
+<pre><code>└── 📁ccg
+    └── 📁controllers
+        └── aem.py
+        └── link.py
+        └── motec.py
+        └── __init__.py
+    └── 📁data
+        └── alloc_data.py
+        └── gating.py
+        └── tbldata.py
+        └── tsdata.py
+        └── __init__.py
+    └── 📁db
+        └── mongo.py
+        └── __init__.py
+    └── 📁ui
+        └── caldata_scripts.js
+        └── panel.py
+        └── plot.py
+        └── plotgo.py
+        └── plot_themes.py
+        └── __init__.py
+    └── util.py
+    └── __init__.py
 </code></pre>
               
             </div>
@@ -173,5 +200,5 @@ docs/
 
 <!--
 MkDocs version : 1.6.0
-Build Date UTC : 2024-05-21 22:30:31.012311+00:00
+Build Date UTC : 2024-05-21 23:22:47.113985+00:00
 -->
